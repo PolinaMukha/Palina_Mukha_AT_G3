@@ -8,6 +8,5 @@ public class CycleRunner {
         //new MultiplicityByMonth().sumElementsMultiplicityByMonth(MultiplicityByMonth.n);
         //new SumElements().sumElements(SumElements.n);
         //new Image().displayImage();
-
     }
 }
