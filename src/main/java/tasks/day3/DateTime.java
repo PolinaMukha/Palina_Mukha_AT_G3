@@ -1,7 +1,5 @@
 package main.java.tasks.day3;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
