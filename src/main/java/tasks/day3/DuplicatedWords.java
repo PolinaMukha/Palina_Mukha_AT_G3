@@ -1,13 +1,9 @@
 package main.java.tasks.day3;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 /* 2.1 Найти и вывести в консоль все дубликаты слов в строке текста*/
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-/*
-2.1 найти и вывести в консоль все дубликаты слов в строке текста
- */
 
 public class DuplicatedWords {
 

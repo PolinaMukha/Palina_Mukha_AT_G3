@@ -9,7 +9,7 @@ public class StringRunner {
     public static void main(String[] args) {
         //new DuplicatedWords().DeleteDuplicates();
         //new ConversionText().ConvertTextWithNumbers();
-        //new DateTime().dateTime();
+        new DateTime().dateTime();
 
 
 
