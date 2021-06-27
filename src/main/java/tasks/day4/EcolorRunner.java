@@ -5,6 +5,18 @@ public class EcolorRunner {
         switch (color){
             case BLUE:
                 break;
+
         }
     }
+
+    public void printColorByHex(int hex){
+        switch (Ecolor.byHex(hex)){
+            case BLUE:
+                break;
+            case RED:
+        }
+
+    }
+
+
 }

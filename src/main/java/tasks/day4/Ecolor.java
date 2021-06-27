@@ -10,9 +10,19 @@ public enum Ecolor {
     String color;
     int hex;
 
-    Ecolor(String color, int hex){
+    Ecolor(String color, int hex) {
         this.color = color;
         this.hex = hex;
     }
 
+    public static Ecolor byHex(int hex) {
+        switch (hex) {
+            case 2:
+                return BLUE;
+            case 3:
+                return GREEN;
+            default:
+                return RED;
+        }
+    }
 }
