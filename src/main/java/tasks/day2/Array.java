@@ -2,7 +2,8 @@ package main.java.tasks.day2;
 
 import java.util.Random;
 
-public class Array {
+/*
+public statis int[] class Array {
     public void printInitialArray() {
         int[] array1 = new int[25];
 
@@ -17,4 +18,4 @@ public class Array {
             System.out.print(i + " ");
         }
     }
-}
+}*/
