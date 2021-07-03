@@ -6,13 +6,10 @@ public class ObjectContainer {
     private Object[] objects = new Object[10];
 
     public void add(Object o) {
-        //Object t = null;
-        //for (int i = 0; i < objects.length; i++) {}
         if (counter < objects.length) {
             objects[counter] = o;
             counter++;
         }
-        //return t;
     }
 
     public Object removeLast() {
