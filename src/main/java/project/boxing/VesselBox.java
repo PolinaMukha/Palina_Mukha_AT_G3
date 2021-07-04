@@ -15,4 +15,5 @@ public class VesselBox<T extends Vessel> {
     private T[] vesselBox1 = (T[]) new Object[9];
     private T[] vesselBox2 = (T[]) new Object[25];
     private T[] vesselBox3 = (T[]) new Object[36];
+
 }
