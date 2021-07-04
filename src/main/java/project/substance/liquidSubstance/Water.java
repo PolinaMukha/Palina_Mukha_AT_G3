@@ -1,4 +1,4 @@
-package main.java.project.liquid;
+package main.java.project.substance.liquidSubstance;
 
 /*
 Water:
@@ -7,7 +7,9 @@ Water:
 ------ содеждит геттеры и сеттеры ко всем полям
  */
 
-public abstract class Water {
+import main.java.project.interfaces.Transformable;
+
+public abstract class Water implements Transformable {
     private String color = "no";
     private String transparency = "transparent";
     private String smell = "no";

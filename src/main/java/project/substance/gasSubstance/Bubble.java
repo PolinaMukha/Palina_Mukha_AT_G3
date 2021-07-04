@@ -1,4 +1,4 @@
-package main.java.project.burbolka;
+package main.java.project.substance.gasSubstance;
 
 /*
 Bubble:
