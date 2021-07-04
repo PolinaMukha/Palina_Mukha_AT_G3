@@ -1,4 +1,4 @@
-package main.java.project.liquid;
+package main.java.project.substance.liquidSubstance;
 
 /*
 SparklingWater:
@@ -18,7 +18,7 @@ SparklingWater:
 
  */
 
-import main.java.project.burbolka.Bubble;
+import main.java.project.substance.gasSubstance.Bubble;
 
 public class SparklingWater extends Water {
 
@@ -55,6 +55,11 @@ public class SparklingWater extends Water {
 
     public boolean isSparkle(){
         return true;
+    }
+
+    @Override
+    public void mix() {
+
     }
 }
 

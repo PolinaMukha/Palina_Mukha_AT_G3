@@ -13,30 +13,62 @@ Bottle:
  */
 
 
-import main.java.project.burbolka.Bubble;
-import main.java.project.liquid.SparklingWater;
+import main.java.project.interfaces.Containable;
+import main.java.project.interfaces.Transformable;
+import main.java.project.material.Material;
+import main.java.project.substance.gasSubstance.Bubble;
+import main.java.project.substance.liquidSubstance.SparklingWater;
 
-public class Bottle {
+public class Bottle extends Vessel implements Containable {
     private double volume;
     private SparklingWater water;
 
-    public Bottle(double volume){
+    public Bottle(double volume, double diameter, int weight, Material material) {
+        super(volume, diameter, weight, material);
+    }
+
+    public Bottle(double volume) {
         this.volume = volume;
         Bubble[] bubbles = new Bubble[(int) (volume * 10000)];
     }
 
-    public void open(){
+    @Override
+    public void addStuff(Transformable stuff) {
+
+    }
+
+    @Override
+    public Transformable removeStuff() {
+        return null;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
+    @Override
+    public int getFreeSpace() {
+        return 0;
+    }
+
+    public void open() {
         this.water = water;//this.water.setOpened(true)
     }
 
-    public void warm(int temperature){
+    @Override
+    public void close() {
+
     }
 
-    public SparklingWater getWater(){
+    public void warm(int temperature) {
+    }
+
+    public SparklingWater getWater() {
         return water;
     }
 
-    public void setWater(SparklingWater water){
+    public void setWater(SparklingWater water) {
 
     }
 /*    public Bottle(double volume, SparklingWater water) {
