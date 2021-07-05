@@ -2,7 +2,6 @@ package main.java.tasks.day6.hometaskCollections;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.ListIterator;
 
 public class Butterflies {
     public static void main(String[] args) {
@@ -25,13 +24,12 @@ public class Butterflies {
         }
         System.out.println(counter);
 
-
         for (int i = 0; i < butterflies.size(); i++) {
-            //System.out.println(butterflies.get(i) + " ");
+            System.out.println(butterflies.get(i) + " ");
         }
 
         for (String but : butterflies) {
-            //System.out.println(but);
+            System.out.println(but);
         }
     }
 }
