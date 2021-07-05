@@ -28,5 +28,11 @@ public class FigureFile{
 
         }
         System.out.println(counter);
+
+        figures.add(3, "Треугольник");
+
+        for (int i = 0; i < figures.size(); i++) {
+            System.out.print(figures.get(i) + " ");
+        }
     }
 }
