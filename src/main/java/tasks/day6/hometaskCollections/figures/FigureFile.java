@@ -29,6 +29,8 @@ public class FigureFile{
         }
         System.out.println(counter);
 
+        //TODO How to add and foreach
+
         figures.add(3, "Треугольник");
 
         for (int i = 0; i < figures.size(); i++) {
