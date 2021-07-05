@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-public class FigureFile {
+public class FigureFile{
 
     public static void write(String file) throws IOException {
         BufferedWriter out = new BufferedWriter(new FileWriter(file));
