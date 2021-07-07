@@ -12,6 +12,7 @@ public class FigureFile{
         BufferedWriter out = new BufferedWriter(new FileWriter(file));
         String[] figures = {"Овал", "Прямоугольник", "Круг", "Квадрат", "Эллипс"};
         List<String> list = Arrays.asList(figures);
+
         System.out.println(list);
 
         for (String f : figures) {
@@ -31,10 +32,10 @@ public class FigureFile{
 
         //TODO How to add and foreach
 
-        figures.add(3, "Треугольник");
+        //figures.add(3, "Треугольник");
 
-        for (int i = 0; i < figures.size(); i++) {
+        /*for (int i = 0; i < figures.size(); i++) {
             System.out.print(figures.get(i) + " ");
-        }
+        }*/
     }
 }
