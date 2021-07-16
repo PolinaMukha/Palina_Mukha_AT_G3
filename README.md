@@ -1,1 +1,0 @@
-# Palina_Mukha_AT_G3
