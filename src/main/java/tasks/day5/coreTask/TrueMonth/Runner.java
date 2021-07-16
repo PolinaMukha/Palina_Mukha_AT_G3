@@ -3,6 +3,7 @@ package main.java.tasks.day5.coreTask.TrueMonth;
 import main.java.tasks.day5.coreTask.TrueMonth.PrintNextMonth;
 
 import java.util.Scanner;
+import static main.java.tasks.day5.coreTask.TrueMonth.PrintNextMonth.printNextMonth;
 
 /*
 - Написать метод, который выводит следующий месяц от заданного во входном параметре.
@@ -19,7 +20,7 @@ public class Runner {
             if (month.equalsIgnoreCase("qw")) {
                 return;
             } else {
-                System.out.println(PrintNextMonth.printNextMonth(month));
+                System.out.println(printNextMonth(month));
             }
         }
     }
