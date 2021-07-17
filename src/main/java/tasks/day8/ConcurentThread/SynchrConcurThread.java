@@ -1,13 +1,13 @@
 package main.java.tasks.day8.ConcurentThread;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
-public class DemoConcurThread {
+public class SynchrConcurThread {
     static int j;
 
     public static void main(String[] args) throws InterruptedException {
-        Map<Integer, Integer> myMap = new HashMap<>();
+        Map<Integer, Integer> myMap = new ConcurrentHashMap<>();
 
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < 1_0_000; i++) {
