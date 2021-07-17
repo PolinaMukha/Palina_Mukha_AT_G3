@@ -1,30 +1,29 @@
 package main.java.tasks.day8.ConcurentThread;
 
-import java.util.HashMap;
-import java.util.Map;
-
-public class DemoConcurThread {
+public class CounterMonitorThread {
     static int j;
 
     public static void main(String[] args) throws InterruptedException {
-        Map<Integer, Integer> myMap = new HashMap<>();
+        Object lock = new Object();
 
         Thread t1 = new Thread(() -> {
-            for (int i = 0; i < 1_0_000; i++) {
-                myMap.put(i, i);
+            synchronized (lock) {
+                for (int i = 0; i < 1_0_000; i++) {
+                    j++;
+                }
             }
         });
-
         Thread t2 = new Thread(() -> {
-            for (int i = 0; i < 1_0_000; i++) {
-                myMap.forEach((k, v) -> j += v);
+            synchronized (lock) {
+                for (int i = 0; i < 1_0_000; i++) {
+                    j--;
+                }
             }
         });
-
         t1.start();
         t2.start();
         t2.join();
-        Thread.sleep(100);
         System.out.println(j);
     }
 }
+
